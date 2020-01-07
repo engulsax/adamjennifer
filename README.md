@@ -1,2 +1,2 @@
-# adamjennifer.github.io
-Wedding website
+# adamjennifer.com
+Wedding website for private use
