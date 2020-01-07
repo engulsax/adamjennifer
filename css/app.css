@@ -101,6 +101,12 @@ hr.white {
   -webkit-box-shadow: 0.5rem 0.5rem #333131;
           box-shadow: 0.5rem 0.5rem #333131; }
 
+.background-box-5 {
+  background-color: #F3F3F3;
+  -webkit-box-shadow: 0.5rem 0.5rem #bfbfbf;
+          box-shadow: 0.5rem 0.5rem #bfbfbf; }
+          
+
 .dinnermenu li {
   margin-top: 1rem; }
 
@@ -112,6 +118,37 @@ hr.white {
 
 .padding-top {
   padding-top: 1rem; }
+
+.small-header {
+  font-size: 110%;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.small-header-left {
+  font-size: 110%;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+#border-black { 
+  border: 7px solid transparent;
+  padding: 5px;
+  -webkit-border-image: url(../img/borderblack.png) 200 round; /* Safari 3.1-5 */
+  -o-border-image: url(../img/borderblack.png) 200 round; /* Opera 11-12.1 */
+  border-image: url(../img/borderblack.png) 200 round;
+}
+
+#border-white { 
+  border: 7px solid transparent;
+  padding: 5px;
+  -webkit-border-image: url(../img/borderwhite.png) 200 round; /* Safari 3.1-5 */
+  -o-border-image: url(../img/borderwhite.png) 200 round; /* Opera 11-12.1 */
+  border-image: url(../img/borderwhite.png) 200 round;
+}
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
