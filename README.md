@@ -1,2 +1,2 @@
 # adamjennifer.com
-Wedding website for private use
+Wedding website for myself
