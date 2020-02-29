@@ -17,6 +17,18 @@ html, body {
   margin: 0;
   padding: 0; }
 
+body::-webkit-scrollbar{
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track{
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #333131;
+}
+
 #header {
   background-image: url('../img/header.jpg');
   min-height: 65vh;
