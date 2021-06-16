@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 3000px){
+@media only screen and (max-width: 760px){
   .hide-800{
     display: none !important;
     visibility:hidden !important;
@@ -16,55 +16,55 @@ body {
 p{
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  margin: 1rem;
+  margin: 0.2rem;
 }
 
 .small{
-  font-size: 5rem;
+  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 0.2vw;;
 }
 
 .p--white{
-  font-size: 3.5rem;
+  font-size: 1rem;
   color: white;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.3rem;
   font-family: 'Roboto', sans-serif;
 }
 
 .p--grey{
-  font-size: 3.5rem;
-  letter-spacing: 0.7rem;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
   color: #545454;
   font-family: 'Roboto', sans-serif;
 }
 
 
 h1{
-  font-size: 20rem;
+  font-size: 7rem;
   font-weight: 400;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
   color: white;
   font-family: 'Satisfy', cursive;
   text-align: center;
 }
 
 h2{
-  font-size: 8rem;
+  font-size: 3rem;
   font-weight: 400;
-  margin-bottom: 10rem;
-  letter-spacing: 3rem;
+  margin-bottom: 6rem;
+  letter-spacing: 0.7rem;
   color: white;
   font-family: 'Robot', sans-serif;
   text-align: center;
 }
 
 h3{
-  font-size: 7rem;
+  font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 10rem;
-  letter-spacing: 3rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.6rem;
   color: #545454;
   font-family: 'Robot', sans-serif;
   text-align: center;
@@ -72,22 +72,22 @@ h3{
 }
 
 h4{
-  font-size: 5rem;
+  font-size: 1.3rem;
   font-weight: 400;
-  margin-bottom: 5rem;
-  letter-spacing: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.6rem;
   text-transform: uppercase;
   color: #545454;
   font-family: 'Robot', sans-serif;
   text-align: center;
   margin-bottom: 2rem;
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 
 #heart{
   filter: invert(100%);
   width: auto;
-  height: 10rem;
+  height: 3rem;
   margin: 0 auto;
   margin-bottom: 80px;
   display: flex;
@@ -99,7 +99,7 @@ header {
   position: relative;
   background-color: black;
   height: 75vh;
-  min-height: 25rem;
+  min-height: 25%;
   width: 100%;
   overflow: hidden;
   z-index: 0;
@@ -124,7 +124,7 @@ header video {
 
 #timebox-d, #timebox-h, #timebox-m, #timebox-s{
   display: inline-block;  
-  font-size: 15rem;
+  font-size: 3rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -136,13 +136,13 @@ header video {
 
 .timebox{
   line-height: 1;
-  border-radius: 5rem;
+  border-radius: 0.5rem;
   border-color: white;
-  border: 0.5rem solid;
-  padding: 8rem;
-  height: 20rem;
-  width: 20rem;;
-  margin: 5rem;
+  border: 0.2rem solid;
+  padding: 2rem;
+  height: 4rem;
+  width: 4rem;;
+  margin: 1rem;
   color: white;
   float: left;
   text-align: center;
@@ -153,17 +153,17 @@ header video {
   background-color: #F1F1F1;
   height: 100%;
   width: 100%;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   bottom:0
 }
 
 
 .info-container__content{
-  max-width: 250rem;
-  border-radius: 5rem;
-  margin: 15rem auto;
-  padding: 5rem;
+  max-width: 50rem;
+  border-radius: 2rem;
+  margin: 3rem auto;
+  padding: 2rem;
   background-color: white;
   -webkit-box-shadow: 2px 4px 14px -1px #d8d8d8; 
   box-shadow: 2px 4px 14px -1px #d8d8d8;
@@ -175,25 +175,25 @@ header video {
 }
 
 .margin{
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .margin-top{
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 
 .link-map{
-  font-size: 3.5rem;
+  font-size: 1rem;
   color: white;
-  width: 50rem;
-  padding: 2rem;
-  letter-spacing: 0.7rem;
+  width: 10rem;
+  padding: 1rem;
+  letter-spacing: 0.3rem;
   font-family: 'Roboto', sans-serif;
-  border-radius: 5rem;
+  border-radius: 2rem;
   background-color:#545454;
   text-align: center;
-  margin: 5rem auto;
+  margin: 2rem auto;
 }
 
 .link-map:hover{
