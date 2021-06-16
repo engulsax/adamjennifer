@@ -1,513 +1,90 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <title>Jennifer & Adam</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.01" />
+    <base href="/" />
 
-<head>
-    <script src="js/jquery.min.js"></script> <!-- Required -->
-    <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="https://www.paypalobjects.com/js/external/connect/api.js"></script>
-    <script src="js/foundation-explicit-pieces.js"></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam & Jennifer</title>
-    <link rel="stylesheet" href="css/app.css">
-</head>
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="/js/main.js"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda&family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <div class="grid-x">
-        <div id="header" class="cell small">
-            <div id="wedding-text">
-                <h1>Adam & Jennifer</h1>
-                <p> 27 / 06 / 2020 </p>
-            </div>
-            <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
-                <button class="close-button" aria-label="Close menu" type="button" data-close>
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <br><br><br>
-                <nav>
-                    <ul class="vertical menu" data-magellan>
-                        <li><a class="button" href="#first">Välkommen</a></li>
-                        <li><a class="button" href="#second">Information</a></li>
-                        <li><a class="button" href="#third">Upplägg</a></li>
-                        <li><a class="button" href="#fourth">Middags Meny</a></li>
-                        <li><a class="button" href="#fifth">Boende</a></li>
-                        <li><a class="button" href="#sixth">Kontakt</a></li>
-                        <li><a class="button" href="#seventh">Hitta Hit</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div data-sticky-container>
-                <div class="off-canvas-content" data-sticky-on="small" data-sticky data-options="marginTop:0;"
-                    data-off-canvas-content>
-                    <button type="button" class="float-right removeSpaceAround" data-toggle="offCanvas">
-                        <img class="minimize float-right hamburger" aria-label="menu" src="img/hamburger.png"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section id="first" data-magellan-target="first">
-        <div class="grid-x align-center background-box-1">
-            <div class="cell small-11 medium-10 large-9">
-                <br><br>
-                <h1 class="text-center header-text">Välkommen</h1>
-                <hr>
-                <div class="grid-x">
-                    <div class="small-12 large-5">
-                        <p class="text-center text-justify paragraph-text">På denna hemsida kommer ni hitta all
-                            information ni
-                            behöver
-                            veta inför vårt bröllop.
-                            Här kommer ni kunna se vart, när och hur bröllopet äger rum. Ni kommer kunna läsa om
-                            bröllopsupplägget
-                            samt
-                            middagsmenyn.
-                            Vidare finns det både vägbeskrivning och boenderekommendationer. Under kontakt så finns det
-                            kontaktuppgifter
-                            till våra fina vänner,
-                            Marielle och Mikaela, som har tagit sig an bröllopskoordinationen.
-                            Har ni några roliga spex eller vill hålla något tal är till dem ni ska vända er.
-                            Har ni några allmänna frågor kan ni självklart vända er till oss, brudparet.
-                            Våra kontaktuppgifter hittar ni på samma ställe.
-                            Vi hoppas verkligen att ni kan komma och ser fram emot att träffa er den 27/06/2020.
-                        </p>
-                        <p><b>Svar om ni kan komma ska ges innan den 27 / 05 / 2020</b></p>
-                        <p>Alltså en månad innan bröllopet. Svar ges genom att meddela Adam eller Jennifer. Se
-                            kontaktinfo under kontaksektionen.</p>
-                    </div>
-                    <div class="large-1 small-0"></div>
-                    <div class="small-12 large-6">
-                        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-                            <div class="orbit-wrapper">
-                                <div class="orbit-controls">
-                                    <button class="orbit-previous"><span class="show-for-sr">Previous
-                                            Slide</span>&#9664;&#xFE0E;</button>
-                                    <button class="orbit-next"><span class="show-for-sr">Next
-                                            Slide</span>&#9654;&#xFE0E;</button>
-                                </div>
-                                <ul class="orbit-container">
-                                    <li class="is-active orbit-slide">
-                                        <figure class="orbit-figure">
-                                            <img class="orbit-image" src="img/harrgard.jpg" alt="Herrgård">
-                                            <figcaption class="orbit-caption">Herrgården</figcaption>
-                                        </figure>
-                                    </li>
-                                    <li class="orbit-slide">
-                                        <figure class="orbit-figure">
-                                            <img class="orbit-image" src="img/lada.jpg" alt="Ladan">
-                                            <figcaption class="orbit-caption">Ladan där festen håller hus</figcaption>
-                                        </figure>
-                                    </li>
-                                    <li class="orbit-slide">
-                                        <figure class="orbit-figure">
-                                            <img class="orbit-image" src="img/lada2.jpg" alt="Ladan2">
-                                            <figcaption class="orbit-caption">Intui ladan</figcaption>
-                                        </figure>
-                                    </li>
-                                    <li class="orbit-slide">
-                                        <figure class="orbit-figure">
-                                            <img class="orbit-image" src="img/lada3.jpg" alt="Ladan3">
-                                            <figcaption class="orbit-caption">Inuti ladan igen</figcaption>
-                                        </figure>
-                                    </li>
-                                    <li class="orbit-slide">
-                                        <figure class="orbit-figure">
-                                            <img class="orbit-image" src="img/stall.jpg" alt="Stall">
-                                            <figcaption class="orbit-caption">Gångstigen där gästerna kommer att gå
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                    <li class="orbit-slide">
-                                        <figure class="orbit-figure">
-                                            <img class="orbit-image" src="img/strand.jpg" alt="Gång">
-                                            <figcaption class="orbit-caption">Sjön Roxen där vigslen kommer ske
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                </ul>
-                            </div>
-                            <nav class="orbit-bullets">
-                                <button class="is-active" data-slide="0">
-                                    <span class="show-for-sr">First slide details.</span>
-                                    <span class="show-for-sr" data-slide-active-label>Current Slide</span>
-                                </button>
-                                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-                                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-                                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-                                <button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
-                                <button data-slide="5"><span class="show-for-sr">Sixth slide details.</span></button>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-        </div>
-    </section>
-    <section id="second" data-magellan-target="second">
-        <div class="grid-x align-center background-box-2">
-            <div class="cell small-11 medium-10 large-9">
-                <br><br>
-                <h1 class="text-center header-text white">Information</h1>
-                <hr class="white">
-                <div class="grid-x">
-                    <div class="small-12 large-5">
-                        <h2 class="small-header white paragraph-text">Sandviks Herrgård</h2>
-                        <p class="text-center text-justify paragraph-text white">
-                            Vi kommer gifta oss vid Sandviks Herrgård. Här kommer både vigseln och festen äga rum.
-                            Vigseln kommer ske på stranden med sjön Roxen som bakgrund.
-                            Bröllopsfesten sker några få meter bort, vid ladan.
-                            Vi kommer alltså inte vara eller ha tillträde till självaste herrgården utan vi nyttjar
-                            höger sida
-                            av tomten (om man står med ryggen mot ladan).
-                        </p>
-                    </div>
-                    <div class="small-0 large-2"></div>
-                    <div class="small-12 large-5">
-                        <h2 class="small-header white paragraph-text">Bra att veta</h2>
-                        <ul class="white">
-                            <li class="paragraph-text">För att fotografen ska få så vackra bilder som möjligt
-                                ser vi att gästerna sparar fotografering till efter vigseln</li>
-                            <li class="paragraph-text">Rökning är endast tillåtet på anvisade platser med askkoppar</li>
-                            <li class="paragraph-text">Parkering sker uppe vid campingen</li>
-                            <li class="paragraph-text">Eldförbud råder</li>
-                        </ul>
-                    </div>
-                    <div class="small-12 large-5">
-                        <h2 class="small-header white paragraph-text">Klädkod - Kavaj</h2>
-                        <h3 class="small-header-left white paragraph-text">Herrar</h3>
-                        <p class="text-center text-justify paragraph-text white">
-                            "Kavaj innebär för herrar att man ska bära kostym.
-                            Valfriheten är dock stor vad gäller färg, både på själva kostymen och skjortan."
-                        </p>
-                        <h3 class="small-header-left white paragraph-text">Damer</h3>
-                        <p class="text-center text-justify paragraph-text white">
-                            "Klänning, kjol, byxdress eller dräkt. Det ska vara elegant men inte lika uppklätt som en
-                            mörk aftonklädsel."
-                        </p>
-                        <a class="button" href="http://www.kladkoder.nu/kavaj/">Läs mer</a>
-                    </div>
-                    <div class="small-0 large-2"></div>
-                    <div class="small-12 large-5">
-                        <h2 class="small-header white paragraph-text">Önskelista</h2>
-                        <p class="text-center text-justify paragraph-text white">
-                            Eftersom ni, våra kära gäster, kommer från många olika platser
-                            anser vi att er närvaro på bröllopet är gåva nog.
-                            Vill ni trots detta ge något, ser vi helst att det är ett litet
-                            bidrag till vår bröllopsresa till Italien.
-                        </p>
-                    </div>
-                </div>
-                <br><br>
-            </div>
-        </div>
-    </section>
-    <section id="third" data-magellan-target="third">
-        <div class="grid-x align-center background-box-1">
-            <div class="cell small-11 medium-10 large-9">
-                <br><br>
-                <h1 class="text-center header-text">Upplägg</h1>
-                <hr>
-                <p class="text-center">Upplägget är preliminärt och kan komma att ändras</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th width="20">Tid</th>
-                            <th width="40">Aktvitet</th>
-                            <th>Kommentar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>16:00</td>
-                            <td>Vigsel</td>
-                            <td>Vigsel med utsikt mot sjön Roxen med livemusik. Vänligen spara fotografering till efter vigseln.</td>
-                        </tr>
-                        <tr>
-                            <td>17:00</td>
-                            <td>Brudskål</td>
-                            <td>Fotografering av brudfölje, släkt och gäster.</td>
-                        </tr>
-                        <tr>
-                            <td>17:30</td>
-                            <td>Mingel</td>
-                            <td>Fördrink och mingel. Värdar informera om fotobås, mingel och bordsplacering samt eventuella regler.</td>
-                        </tr>
-                        <tr>
-                            <td>18:00</td>
-                            <td>Middag</td>
-                            <td>Maten är redo att ätas och talare redo att tala</td>
-                        </tr>
-                        <tr>
-                            <td>19:30</td>
-                            <td>Spex</td>
-                            <td>Värdarna introducerar spexare och deras spex sen så spexar vi på.</td>
-                        </tr>
-                        <tr>
-                            <td>20:30</td>
-                            <td>Tårta</td>
-                            <td>Ett litet uppehåll i spexandet för att njuta av den goda bröllopstårtan.</td>
-                        </tr>
-                        <tr>
-                            <td>21:30</td>
-                            <td>Spex</td>
-                            <td>Spexningen forstätter.</td>
-                        </tr>
-                        <tr>
-                            <td>22:30</td>
-                            <td>Bröllopsdans</td>
-                            <td>Bröllopsdans sker i ladan, hoppas ni gillar att dansa.</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <br><br>
-            </div>
-        </div>
-    </section>
-    <section id="fourth" data-magellan-target="fourth">
-        <div class="grid-x align-center background-box-2">
-            <div class="cell small-11 medium-10 large-9">
-                <br><br>
-                <h1 class="text-center header-text white">Middags Meny</h1>
-                <hr class="white">
-                <div class="grid-x dinnermenu text-left">
-                    <div class="cell small-12 large-5">
-                        <img class="background-box-4 margin-bottom hide-for-small-only" alt="buffet"
-                            src="img/buffet.jpg">
-                    </div>
-                    <div class="small-0 large-1"></div>
-                    <div class="cell small-12 large-6">
-                        <p class="paragraph-text white">
-                            På bröllopet kommer vi bjuda på Buffé, förhoppningsvis finns något för alla. Har ni några
-                            allergier eller någon annan specialkost?
-                            Hör av er till oss så fixar vi det (minst en månad innan bröllopet).
-                            Vidare kommer det vara öppen bar under kvällen.
-                            Där bjuds det på öl, cider, vin, läsk och vatten.
-                        </p>
-                        <div class="cell small-12">
-                            <span class="badge primary">G</span>
-                            <span class="paragraph-text white"> = gluten </span>
-                            <span class="badge primary">L</span>
-                            <span class="paragraph-text white"> = laktos </span>
-                            <span class="badge primary">M</span>
-                            <span class="paragraph-text white"> = mjölkprotein </span>
-                            <span class="badge primary">Ä</span>
-                            <span class="paragraph-text white"> = ägg </span>
-                            <span class="badge primary">V</span>
-                            <span class="paragraph-text white"> = vegetariskt </span>
-                            <span class="badge primary">K</span>
-                            <span class="paragraph-text white"> = kött </span>
-                        </div>
-                        <br>
-                        <div class="grid-x dinnermenu">
-                            <div class="cell small-12 large-6">
-                                <ul class="white no-bullet">
-                                    <li class="paragraph-text">
-                                        Potatisgratäng
-                                        <br>
-                                        <span class="badge primary">L</span>
-                                        <span class="badge primary">M</span>
-                                        <span class="badge primary">V</span>
-                                    </li>
-                                    <li class="paragraph-text">
-                                        Kallslagen bearnaisesås
-                                        <br>
-                                        <span class="badge primary">L</span>
-                                        <span class="badge primary">M</span>
-                                        <span class="badge primary">V</span>
-                                    </li>
-                                    <li class="paragraph-text">
-                                        Haricot verts med bacon
-                                        <br>
-                                        <span class="badge primary">K</span>
-                                    </li>
-                                    <li class="paragraph-text">
-                                        Smör och bröd
-                                        <br>
-                                        <span class="badge primary">G</span>
-                                        <span class="badge primary">L</span>
-                                        <span class="badge primary">M</span>
-                                        <span class="badge primary">V</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="cell small-12 large-6">
-                                <ul class="white no-bullet">
-                                    <li class="paragraph-text">
-                                        Skagenröra, mörkt bröd och knäcke
-                                        <br>
-                                        <span class="badge primary">G</span>
-                                        <span class="badge primary">L</span>
-                                        <span class="badge primary">M</span>
-                                        <span class="badge primary">Ä</span>
-                                    </li>
-                                    <li class="paragraph-text">
-                                        Varmrökt lax med romsås
-                                        <br>
-                                        <span class="badge primary">Ä</span>
-                                    </li>
-                                    <li class="paragraph-text">
-                                        Tomatsallad med mozzarella och ruccola
-                                        <br>
-                                        <span class="badge primary">G</span>
-                                        <span class="badge primary">L</span>
-                                        <span class="badge primary">M</span>
-                                        <span class="badge primary">Ä</span>
-                                    </li>
-                                    <li class="paragraph-text">
-                                        Spenatsallad med fetaost och syltad rödlök
-                                        <br>
-                                        <span class="badge primary">G</span>
-                                        <span class="badge primary">L</span>
-                                        <span class="badge primary">M</span>
-                                        <span class="badge primary">Ä</span>
-                                    </li>
-                                    <li class="paragraph-text">
-                                        Helstekt oxfilé
-                                        <br>
-                                        <span class="badge primary">K</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-            </div>
-        </div>
-    </section>
-    <section id="fifth" data-magellan-target="fifth">
-        <div class="grid-x align-center background-box-1">
-            <div class="cell small-11 medium-10 large-9">
-                <br><br>
-                <h1 class="text-center header-text">Boende</h1>
-                <hr>
-                <div class="grid-x">
-                    <div class="small-12 large-5">
-                        <p class="text-center text-justify paragraph-text">Om man vill övernatta för att undvika åka hem
-                            på kvällen rekommenderar vi
-                            Sandviks Camping som ligger precis bredvid.
-                            Där kan man hyra stugor för 600 kr natt (fyra sängar per stuga). Det finns även husvagn- och
-                            tältplatser.
-                        </p>
-                        <a class="button" href="https://caravanclub.se/camping/sandvik/">Mer Info Om Sandviks
-                            Camping</a>
-                        <p class="h5">Andra Alternativ</p>
-                        <ul class="no-bullet">
-                            <li><a href="http://www.roxtorp.se/">Roxtorp Gård Bed & Breakfast</a></li>
-                            <p class="remove-space help-text">4 min med bil</p>
-                            <li><a href="http://www.vandrarhem.online/ljungsbro-vandrarhem/">Ljungsbro Vandrarhem</a>
-                            </li>
-                            <p class="remove-space help-text"> 15 min med bil</p>
-                            <li><a href="https://www.villafreja.se/">Vandrarhemmet Freja</a></li>
-                            <p class="remove-space help-text">20 min med bil</p>
-                            <li><a href="https://www.booking.com/searchresults.sv.html?city=-2501336/">Hotell i
-                                    Linköping City</a></li>
-                            <p class="remove-space help-text">30 min med bil</p>
-                        </ul>
-                    </div>
-                    <div class="large-1 small-0"></div>
-                    <div class="small-12 large-6">
-                        <img class="background-box-5 margin-bottom hide-for-small-only" src="img/camping2.jpg">
-                    </div>
-                </div>
-            </div>
-            <br><br>
-        </div>
-    </section>
-    <section id="sixth" data-magellan-target="sixth">
-        <div class="grid-x align-center background-box-2">
-            <div class="cell small-11 medium-10 large-9">
-                <br><br>
-                <h1 class="text-center header-text white">Kontakt</h1>
-                <hr class="white">
-                <div class="cell">
-                    <div class="grid-x grid-padding-x align-center">
-                        <div class="cell large-5">
-                            <p class="white padding-top paragraph-text">Vill ni hålla något underhållande spex eller
-                                något
-                                vackert tal så
-                                hör av er till: </p>
-                            <div class="background-box-4">
-                                <br>
-                                <p class="h5 text-center paragraph-text">
-                                    <u><b>Bröllopskoordinatorer</b></u>
-                                </p>
-                                <p class="text-center"><i>Marielle & Mikaela</i></p>
-                                <div class="margin">
-                                    <p class="paragraph-text"><b>Email</b></p>
-                                    <p class="paragraph-text">spexochtal2020@hotmail.com</p>
-                                    <hr>
-                                </div>
-                                <div class="margin">
-                                    <p class="paragraph-text"><b>Facebook</b></p>
-                                    <p class="paragraph-text"><a href="https://www.facebook.com"><u>Evenemang</u></a>
-                                    </p>
-                                    <hr>
-                                </div>
-                                <p class="paragraph-text margin">På evenmanget kan gästerna prata fritt om bröllopet
-                                    utan att Adam och Jennifer ser.</p>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="cell large-5">
-                            <p class="white padding-top paragraph-text">Ska ni ange svar angående om ni kommer eller ej
-                                alternativt har
-                                några allmäna frågor: </p>
-                            <div class="background-box-4">
-                                <br>
-                                <p class="h5 text-center paragraph-text">
-                                    <u><b>Bröllopsparet</b></u>
-                                </p>
-                                <p class="text-center"><i>Adam & Jennifer</i></p>
-                                <div class="margin">
-                                    <p class="paragraph-text"><b>Email</b></p>
-                                    <p class="paragraph-text">adamcarlleo@gmail.com</p>
-                                    <hr>
-                                </div>
-                                <div class="margin">
-                                    <p class="paragraph-text"><b>Tel</b></p>
-                                    <p class="paragraph-text">073 502 50 82</p>
-                                    <hr>
-                                </div>
-                                <p class="paragraph-text margin">Finns ni på messenger kan ni skriva till oss där också.
-                                </p>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                    <br><br>
-                </div>
-            </div>
-    </section>
-    <section id="seventh" data-magellan-target="seventh">
-        <div class="grid-x align-center background-box-1">
-            <div class="cell small-11 medium-10 large-9">
-                <br><br>
-                <h1 class="text-center header-text">Hitta Hit</h1>
-                <hr>
-                <div class="grid-x">
-                    <div class="small-12 large-6">
-                        <div class="responsive-embed ">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2082.3200195170753!2d15.617499516012954!3d58.53964408138949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46595ddb5a7b9349%3A0x8ed0bd5764741c5!2sSandviks%20Herrg%C3%A5rd!5e0!3m2!1sen!2sse!4v1571741622925!5m2!1sen!2sse"
-                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                    </div>
-                    <div class="small-0 large-1"></div>
-                    <div class="small-12 large-5">
-                        <p class="paragraph-text"> <b>HERRGÅRDEN, Sandvik, 590 78 Vreta Kloster</b></p>
-                        <p class="paragraph-text">
-                            Sandvik ligger mellan Linköping och Norrköping vid sjön Roxen.
-                        </p>
-                    </div>
-                </div>
-                <br><br>
-            </div>
-        </div>
-    </section>
-    <script src="js/app.js"></script>
-</body>
+  <body>
+    <header>
+      <!-- VIDEO BACKGROUND -->
+      <div id="background-container">
+        <video autoplay muted loop id="video-container">
+          <source src="/assets/WeddingBackground.mov" type="video/mp4" />
+        </video>
+      </div>
 
+      <!-- LIVE  -->
+      <section id="live-container center">
+        <div class="content">
+          <h1 class="header-h1">Jennifer & Adam</h1>
+          <div><img id="heart" src="/assets/heart.svg" /></div>
+          <div id="timeboxes" class="hide-800">
+            <div class="timebox">
+              <p id="timebox-d"></p>
+              <p class="small">Dagar</p>
+            </div>
+            <div class="timebox">
+              <p id="timebox-h"></p>
+              <p class="small">Timmar</p>
+            </div>
+            <div class="timebox">
+              <p id="timebox-m"></p>
+              <p class="small">Minuter</p>
+            </div>
+            <div class="timebox">
+              <p id="timebox-s"></p>
+              <p class="small">Sekunder</p>
+            </div>
+          </div>
+          <h2 class="header-h2 hide-800">Tills Vigseln Är Live</h2>
+          <p class="p--white">Den 17 Juli 21</p>
+          <p class="p--white">Klockan 16</p>
+        </div>
+      </section>
+    </header>
+
+    <!-- INFO -->
+    <section id="info-container">
+      <div class="info-container__content">
+        <h3>Hitta till bröllopet</h3>
+        <p class="p--grey margin-top">Munkaskogs gård 1</p>
+        <p class="p--grey">566 35 Habo</p>
+        <p id="map" class="link-map" class="p--grey">Gå till karta</p>
+      </div>
+      <div class="info-container__content">
+        <h3>Klädkod</h3>
+        <p class="p--grey margin">Kostym</p>
+      </div>
+      <div class="info-container__content">
+        <h3>Meny</h3>
+        <h4>Förätt</h4>
+        <p class="p--grey">Kräftsoppa med kräftskagen och dill</p>
+        <p class="p--grey">+ 1 glas vin/cider/öl/läsk</p>
+        <h4>Varmrätt</h4>
+        <p class="p--grey">Svensk oxfilé med rödvinssås och potatisgratäng</p>
+        <p class="p--grey">+ 1 glas vin/cider/öl/läsk</p>
+        <h4>Efterätt</h4>
+        <p class="p--grey">Bröllopstårta</p>
+        <p class="p--grey">+ 1 kopp kaffe/te/saft/p></p>
+        <p class="p--grey margin">
+          Baren är öppen om man vill köpa ytterligare dryck
+        </p>
+        <p class="p--grey">Speciallkost kan ordnas om önskas</p>
+        <p class="p--grey">Meddela oss innan 01/07/12</p>
+      </div>
+    </section>
+  </body>
 </html>
