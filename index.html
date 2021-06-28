@@ -1,90 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <title>Jennifer & Adam</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.01" />
-    <base href="/" />
 
-    <!-- LOCAL -->
-    <link rel="stylesheet" href="css/main.css" />
-    <script type="text/javascript" src="/js/main.js"></script>
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merienda&family=Roboto:wght@100;400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <title>Jennifer & Adam</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="/" />
 
-  <body>
-    <header>
-      <!-- VIDEO BACKGROUND -->
-      <div id="background-container">
-        <video autoplay muted loop id="video-container">
-          <source src="/assets/WeddingBackground.mov" type="video/mp4" />
-        </video>
-      </div>
+  <!-- LOCAL -->
+  <link rel="stylesheet" href="css/main.css" />
+  <script type="text/javascript" src="/js/main.js"></script>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Roboto:wght@100;400;700&display=swap"
+    rel="stylesheet" />
+</head>
 
-      <!-- LIVE  -->
-      <section id="live-container center">
-        <div class="content">
-          <h1 class="header-h1">Jennifer & Adam</h1>
-          <div><img id="heart" src="/assets/heart.svg" /></div>
-          <div id="timeboxes" class="hide-800">
-            <div class="timebox">
-              <p id="timebox-d"></p>
-              <p class="small">Dagar</p>
-            </div>
-            <div class="timebox">
-              <p id="timebox-h"></p>
-              <p class="small">Timmar</p>
-            </div>
-            <div class="timebox">
-              <p id="timebox-m"></p>
-              <p class="small">Minuter</p>
-            </div>
-            <div class="timebox">
-              <p id="timebox-s"></p>
-              <p class="small">Sekunder</p>
-            </div>
+<body>
+  <header>
+    <!-- VIDEO BACKGROUND -->
+    <div id="background-container">
+      <video autoplay muted loop id="video-container">
+        <source src="/assets/WeddingBackground.mov" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- LIVE  -->
+    <section id="live-container center">
+      <div class="content">
+        <h1 class="header-h1">Jennifer & Adam</h1>
+        <div><img id="heart" src="/assets/heart.svg" /></div>
+        <div id="timeboxes" class="hide-800">
+          <div class="timebox">
+            <p id="timebox-d"></p>
+            <p class="small">Dagar</p>
           </div>
-          <h2 class="header-h2 hide-800">Tills Vigseln Är Live</h2>
-          <p class="p--white">Den 17 Juli 21</p>
-          <p class="p--white">Klockan 16</p>
+          <div class="timebox">
+            <p id="timebox-h"></p>
+            <p class="small">Timmar</p>
+          </div>
+          <div class="timebox">
+            <p id="timebox-m"></p>
+            <p class="small">Minuter</p>
+          </div>
+          <div class="timebox">
+            <p id="timebox-s"></p>
+            <p class="small">Sekunder</p>
+          </div>
         </div>
-      </section>
-    </header>
-
-    <!-- INFO -->
-    <section id="info-container">
-      <div class="info-container__content">
-        <h3>Hitta till bröllopet</h3>
-        <p class="p--grey margin-top">Munkaskogs gård 1</p>
-        <p class="p--grey">566 35 Habo</p>
-        <p id="map" class="link-map" class="p--grey">Gå till karta</p>
-      </div>
-      <div class="info-container__content">
-        <h3>Klädkod</h3>
-        <p class="p--grey margin">Kostym</p>
-      </div>
-      <div class="info-container__content">
-        <h3>Meny</h3>
-        <h4>Förätt</h4>
-        <p class="p--grey">Kräftsoppa med kräftskagen och dill</p>
-        <p class="p--grey">+ 1 glas vin/cider/öl/läsk</p>
-        <h4>Varmrätt</h4>
-        <p class="p--grey">Svensk oxfilé med rödvinssås och potatisgratäng</p>
-        <p class="p--grey">+ 1 glas vin/cider/öl/läsk</p>
-        <h4>Efterätt</h4>
-        <p class="p--grey">Bröllopstårta</p>
-        <p class="p--grey">+ 1 kopp kaffe/te/saft/p></p>
-        <p class="p--grey margin">
-          Baren är öppen om man vill köpa ytterligare dryck
-        </p>
-        <p class="p--grey">Speciallkost kan ordnas om önskas</p>
-        <p class="p--grey">Meddela oss innan 01/07/12</p>
+        <h2 class="header-h2 hide-800">Tills Vigseln Är Live</h2>
+        <p class="p--white">Den 17 Juli 21</p>
+        <p class="p--white">Klockan 16</p>
       </div>
     </section>
-  </body>
+  </header>
+
+  <!-- INFO -->
+  <section id="info-container">
+    <div class="info-container__content">
+      <h3>Hitta till bröllopet</h3>
+      <p class="p--grey margin-top">Munkaskogs gård 1</p>
+      <p class="p--grey">566 35 Habo</p>
+      <p id="map" class="link-map" class="p--grey">Gå till karta</p>
+    </div>
+    <div class="info-container__content">
+      <h3>Klädkod</h3>
+      <p class="p--grey margin">Kostym</p>
+    </div>
+    <div class="info-container__content">
+      <h3>Meny</h3>
+      <h4>Förätt</h4>
+      <p class="p--grey">Kräftsoppa med kräftskagen och dill</p>
+      <p class="p--grey">+ 1 glas vin/cider/öl/läsk</p>
+      <h4>Varmrätt</h4>
+      <p class="p--grey">Svensk oxfilé med rödvinssås och potatisgratäng</p>
+      <p class="p--grey">+ 1 glas vin/cider/öl/läsk</p>
+      <h4>Efterätt</h4>
+      <p class="p--grey">Bröllopstårta</p>
+      <p class="p--grey">+ 1 kopp kaffe/te/saft</p>
+      <p class="p--grey margin">
+        Baren är öppen om man vill köpa ytterligare dryck
+      </p>
+      <p class="p--grey">Speciallkost kan ordnas om önskas</p>
+      <p class="p--grey">Meddela oss innan 01/07/12</p>
+    </div>
+    <div class="info-container__content">
+      <h3>Tal & Spex</h3>
+      <p class="p--grey margin">
+        Vi har ett par fina människor som kommer hjälpa oss med planeringen av
+        vår stora dag och här kommer lite information om detta:
+      </p>
+      <p class="p--grey">
+        Om man vill hålla ett tal på bröllopet ska man kontakta:
+      <p class="p--grey ">
+        Mikaela Johansson  på telefon: <b> 073 930 04 92 </b>
+      </p>
+      <p class="p--grey margin-top">
+        Vill man hålla i en lek på bröllopet kontaktar man:
+      </p>
+      <p class="p--grey">
+        Ellen Persson på telefon: <b> 073 809 54 00 </b>
+      </p>
+
+      <p class="p--grey">
+        Alternativt
+      </p>
+      <p class="p--grey">
+        Matilda Hubbe på telefon: <b> 076 166 34 12 </b>
+      </p>
+    </div>
+
+    <div class="info-container__content">
+      <h3>Bröllopsgåvor</h3>
+      <p> </p>
+      <p class="p--grey margin-top">
+        Att ni kommer på bröllopet är en gåva nog, men om ni ändå känner att ni vill ge en gåva så skulle vi kunna tänka oss följande:
+      </p>
+      <p class="p--grey margin-top"> Pengar till bröllops resa</p>
+      <p class="p--grey"> Alternativt</p>
+      <p class="p--grey"> Presentkort på någon av följande butiker: </p>
+      <ul>
+        <li>Mio</li>
+        <li>Ikea</li>
+        <li>EM</li>
+        <li>Iems</li>
+        <li>Cervera</li>
+        <li>Elgiganten</li>
+      </ul>
+    </div>
+  </section>
+</body>
+
 </html>
